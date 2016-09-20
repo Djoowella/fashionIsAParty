@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Productpagina</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="index.html">
+					<img src="img/logo-3.png">
+			</a>	
+			<nav class="clearfix">
+				<ul class="topnav" id="myTopnav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Contact</a></li>
+					<li class="icon">
+						<a id="menuIcon" href="#" onclick="openMenu();return false;">&#9776;</a>
+					</li> 
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main-content">
+			<!--Hero image-->
+			<section id="hero">
+				<div id="hero-cta">
+					<h1>Herfst collectie</h1>
+					<button class="btn">Shop nu</button>
+				</div>
+			</section>
+			<!--Image gallery + product details-->
+			<section id="product">
+				<div class="col-1-2">
+					<img src="img/item-4.jpg" id="target-img">
+					<ul id="thumbs">
+				    	<li>
+				    		<a href="img/item-4.jpg" class="thumb"><img src="img/item-4.jpg"></a>
+				    	</li>
+				    	<li>
+				    		<a href="img/item-3.jpg" class="thumb"><img src="img/item-3.jpg"></a>
+				    	</li>						    	
+				    	<li>
+				    		<a href="img/item-1.jpg" class="thumb"><img src="img/item-1.jpg"></a>
+				    	</li>
+				    	<li>
+				    		<a href="img/item-2.jpg" class="thumb"><img src="img/item-2.jpg"></a>
+				    	</li>
+				    	<li>
+				    		<a href="img/item-6.jpg" class="thumb"><img src="img/item-6.jpg"></a>
+				    	</li>
+				    </ul>
+				</div>
+				<div class="col-1-2">
+					<h2>Leren Fantasie Jack <span class="prijs">&euro;149,00</span></h2>
+					<p class="product-nr">&#35;503920417</p>
+					<p class="short">Leren jack met studs en patches. Ritsjes op de boorden en zakken. Riem onderaan het jack. LENGTE MODEL: 178 cm.</p>
+					<p><img id="in-stock" src="img/icon-check.png">Op voorraad</p>
+					
+					<button id="btn-down" class="btn">-</button>
+	    			<input type="text" value="1" class="aantal">
+	    			<button id="btn-up"class="btn">+</button>
+	    			<button id="btn-submit" class="btn">Voeg toe</button>
+	    			
+	    			<div id="melding"></div>
+	    			
+	    			<ul id="tab">
+		    			<li><a href="#" id="first-tab" class="tablinks" onclick="openTab(event, 'details')">Product Details</a></li>
+		    			<li><a href="#" class="tablinks" onclick="openTab(event, 'specs')">Specificaties</a></li>
+		    		</ul>
+		    		<div id="details" class="tabcontent">
+				      <h3>Product Details</h3>
+					  <p>Leren jack met studs en patches. Ritsjes op de boorden en zakken. Riem onderaan het jack. LENGTE MODEL: 178 cm. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div id="specs" class="tabcontent">
+					  	<h3>Specificaties</h3>
+					  	<table>
+							<tr>
+								<th>Buitenkant</th>
+								<td>100% lamsleer</td>
+							</tr>
+							<tr>
+								<th>Voering (body)</th>
+								<td>100% katoen</td>
+							</tr>
+							<tr>
+								<th>Voering (mouw)</th>
+								<td>100% polyester</td>
+							</tr>
+						</table>
+					</div>
+					<div id="usp">
+						<h3>What we Like</h3>
+						<p class="short"><img src="img/heart.png" class="usp-img">Makkelijk te combineren met andere kledingstukken</p>
+						<p class="short"><img src="img/heart.png" class="usp-img">Een musthave voor alle Rockchicks!</p>
+						<p class="short"><img src="img/heart.png" class="usp-img">Gemaakt van echt leder</p>
+						<p class="short"><img src="img/heart.png" class="usp-img">Mooie prints op de voor- en achterkant</p>
+					</div>
+				</div>
+			</section>
+			<!--Recommandations-->
+			<section id="recom">
+				<h2>Maak de look af</h2>
+				<hr>
+				<div class="col-1-3">
+					<img src="img/look-1.jpg">
+					<h3>Leren veterlaarzen</h3>
+					<span class="prijs">&euro;79,95</span>
+				</div>
+				<div class="col-1-3">
+					<img src="img/look-2.jpg">
+					<h3>Bowlingtas met kettinghengsel</h3>
+					<span class="prijs">&euro;79,95</span>
+				</div>
+				<div class="col-1-3">
+					<img src="img/look-3.jpg">
+					<h3>Bikerbroek met hoge taille</h3>
+					<span class="prijs">&euro;39,95</span>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<p>&copy; Joëlla Venmans 2016</p>
+		</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
